@@ -46,6 +46,13 @@ While running a trained agent, I noticed that often the agent got stuck after co
 ## Results
 The code in its current state was able to achieve a mean score of 14 over 100 episodes in three different runs. Random was not seeded in the different runs. Here's a plot of the mean reward over 100 episodes vs episode number for the three runs:  
 ![image](https://user-images.githubusercontent.com/8725869/113443937-b745e500-9414-11eb-8748-23029e065d99.png)  
+The following table contains the summary of the three runs:  
+|Run Name|Episodes to reach mean rewards of 13|Episodes to reach mean rewards of 14|Time taken to reach mean rewards of 14|
+|:-------|:----------------------------------:|:----------------------------------:|:------------------------------------:|
+|Test1|793|870|13m 37s|
+|Test2|956|1067|16m 34s|
+|Test3|838|877|13m 32s|
+
 This plot is created using tensorboard, with log files located at "[/log/tensorboard](https://github.com/fahimfss/ProjectNavigation/tree/main/log/tensorboard)".  
 There is a performance drop at around reward 10.5, because of the added exploration mechanism during that time. 
 
