@@ -45,4 +45,4 @@ To run a trained agent, update the RUN_NAME in the **run.py** file (line 13) and
 <br/>
 
 ## Results
-Please check the [report](https://github.com/fahimfss/RL/blob/master/ProjectNavigationMain/REPORT.md) file for the implementation and result details.
+Please check the [report](https://github.com/fahimfss/ProjectNavigation/blob/main/REPORT.md) file for the implementation and result details.
