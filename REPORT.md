@@ -41,7 +41,7 @@ Prioritized Experience Replay is implemented in the PrioritizedExperienceBuffer 
 (I tried to implement a version of the Prioritized Experience Replay using SumSegmentTree, but unfortunately I could not get it to work properly. It can be found [here](https://github.com/fahimfss/ProjectNavigation/blob/main/experience_replay_sum_tree.py))  
 
 ### Exploration vs Exploitation
-While running a trained agent, I noticed that often the agent got stuck after collecting 10 rewards. To solve this problem, I reset epsilon to 0.25 once the mean reward reaches 10.5 (line 100, [navigation_sovler.py](https://github.com/fahimfss/RL/blob/master/ProjectNavigationMain/navigation_sovler.py)) during training. This made the agent to explore more at later episodes and resulted in an overall better policy.  
+While running a trained agent, I noticed that often the agent got stuck after collecting 10 rewards. To solve this problem, I reset epsilon to 0.25 once the mean reward reaches 10.5 (line 100, [navigation_sovler.py](https://github.com/fahimfss/ProjectNavigation/blob/main/navigation_sovler.py)) during training. This made the agent to explore more at later episodes and resulted in an overall better policy.  
 
 ## Results
 The code in its current state was able to achieve a mean score of 14 over 100 episodes in three different runs. Random was not seeded in the different runs. Here's a plot of the mean reward over 100 episodes vs episode number for the three runs:  
