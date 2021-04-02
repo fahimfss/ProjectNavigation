@@ -46,12 +46,12 @@ While running a trained agent, I noticed that often the agent got stuck after co
 ## Results
 The code in its current state was able to achieve a mean score of 14 over 100 episodes in three different runs. Random was not seeded in the different runs. Here's a plot of the mean reward over 100 episodes vs episode number for the three runs:  
 ![image](https://user-images.githubusercontent.com/8725869/113443937-b745e500-9414-11eb-8748-23029e065d99.png)  
-This plot is created using tensorboard, with log files located at "[/log/tensorboard](https://github.com/fahimfss/RL/tree/master/ProjectNavigationMain/log/tensorboard)".  
+This plot is created using tensorboard, with log files located at "[/log/tensorboard](https://github.com/fahimfss/ProjectNavigation/tree/main/log/tensorboard)".  
 There is a performance drop at around reward 10.5, because of the added exploration mechanism during that time. 
 
 Here's a video of a trained agent collecting bananas in the environment:  
 [VIDEO LINK](https://user-images.githubusercontent.com/8725869/113444334-80bc9a00-9415-11eb-9f55-61d8de9f4804.mp4)  
-This video was created by running the [Test3](https://github.com/fahimfss/RL/tree/master/ProjectNavigationMain/checkpoints) agent, using the [run.py](https://github.com/fahimfss/ProjectNavigation/blob/main/run.py) file.  
+This video was created by running the [Test3](https://github.com/fahimfss/ProjectNavigation/tree/main/checkpoints) agent, using the [run.py](https://github.com/fahimfss/ProjectNavigation/blob/main/run.py) file.  
 
 ## Future Works
 - To solve the environment by implementing the [RAINBOW](https://arxiv.org/abs/1710.02298) paper.  
